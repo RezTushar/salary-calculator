@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title
-st.title("Salary Calculator (RON)")
+st.title("Salary Calculator (Iconic 21)")
 
 # Input: Net Salary
 net_salary = st.number_input("Net Salary (RON)", min_value=0.0, step=0.01)
@@ -47,11 +47,11 @@ total_salary = (net_salary + night_week_bonus + day_weekend_bonus + night_weeken
 # Display Results
 st.subheader("Salary Breakdown")
 st.markdown(f"- Hourly Rate: `{hourly_rate:.2f} RON`")
-st.markdown(f"- Night Week Bonus: `{night_week_bonus:.2f} RON`")
-st.markdown(f"- Day Weekend Bonus: `{day_weekend_bonus:.2f} RON`")
-st.markdown(f"- Night Weekend Bonus: `{night_weekend_bonus:.2f} RON`")
-st.markdown(f"- Holiday Bonus: `{holiday_bonus:.2f} RON`")
-st.markdown(f"- Overtime Bonus: `{overtime_bonus:.2f} RON`")  # Overtime Bonus Breakdown
+st.markdown(f"- Weekdays Night Shift Total: `{night_week_bonus:.2f} RON`")
+st.markdown(f"- Weekends Days Shift Total: `{day_weekend_bonus:.2f} RON`")
+st.markdown(f"- Weekends Night Shift Total: `{night_weekend_bonus:.2f} RON`")
+st.markdown(f"- Holiday Shift Total: `{holiday_bonus:.2f} RON`")
+st.markdown(f"- Overtime Shift Total: `{overtime_bonus:.2f} RON`")  # Overtime Bonus Breakdown
 st.markdown(f"- Performance Bonus: `{performance_bonus:.2f} RON`")
 
 st.subheader("💰 Total Salary")
